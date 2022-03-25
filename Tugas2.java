@@ -40,7 +40,7 @@ public class Tugas2 {
                 sumGanjil += i;
             }
         }
-        System.out.println(" \nHasil Bilangan Genap = " + sumGanjil);
+        System.out.println(" \nHasil Bilangan Ganjil = " + sumGanjil);
 //Fibanocci
         int sum = 0;
         int n1 = 1;
