@@ -61,7 +61,7 @@ public class Tugas2 {
             int n3 = sum + n1 + n2 - 1; //-1 Starts with 1 not zero
             System.out.print("\nHasil Bilangan Fibonacci = " + n3);
 
-            //Tanya user untuk mengulang perhitungan atau tidak
+            //Tanya user untuk mengulangi perhitungan
             System.out.print("\n Anda ingin mengulang [y/t] : ");
             exit_prog = scan.nextLine();
 
