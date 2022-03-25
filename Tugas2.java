@@ -2,6 +2,21 @@ import java.util.Scanner;
 public class Tugas2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        //        Input user data
+//        Pesanan dan nama
+        System.out.print("\nMasukkan Nama Anda [1..25] : ");
+        String nama_mhs = scan.next();
+
+        System.out.print("Masukkan NIM Anda [harus 10 karakter]: ");
+        int nim_mhs = scan.nextInt();
+
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+//        Nama menu
+        System.out.println("Registrasi Sukses.....");
+        System.out.println("Selamat datang " + nama_mhs + " [NIM :" + nim_mhs + "].. ^^__^^");
+        System.out.println("Mari belajar macam-macam deret bilangan");
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+//        var num for store variable input
         int num;
         System.out.print("Masukkan Sembarang Angka [5..20] : ");
         num = scan.nextInt();
@@ -40,5 +55,19 @@ public class Tugas2 {
         }
         int n3 = sum + n1 + n2 - 1; //-1 Starts with 1 not zero
         System.out.print("\nHasil Bilangan Fibonacci = " + n3);
+    }
+
+    public static void promptEnterKey() {
+        System.out.println("\n...tekan ENTER untuk keluar...");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+    }
+
+    static int scanIntMax(Scanner scan, int max) {
+        int val = scan.nextInt();
+        if (val > 10) {
+            val = 10;
+        }
+        return val;
     }
 }
